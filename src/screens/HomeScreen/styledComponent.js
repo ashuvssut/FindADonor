@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import {
-	heightPercentageToDP as hp,
-	widthPercentageToDP as wp,
-} from "react-native-responsive-screen";
+import perfectSize from "../../utils/pixelPerfect";
+
 
 export const BottomView = styled.View`
 	/* background-color: aliceblue; */
@@ -20,7 +18,7 @@ export const CardTitle = styled.Text`
 export const Name = styled.Text`
 	position: absolute;
 	color: #fff;
-	font-size: ${hp("4")}px;
-	top: ${hp("25")}px;
+	font-size: ${perfectSize("4")}px;
+	top: ${perfectSize("25")}px;
 	align-self: center;
 `;

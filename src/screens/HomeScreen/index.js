@@ -1,9 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
-import {
-	heightPercentageToDP as hp,
-	widthPercentageToDP as wp,
-} from "react-native-responsive-screen";
+
 import { Screen } from "../../components/Screen";
 import { BottomView, CardTitle, Name } from "./styledComponent";
 import SquaredCard from "../../components/SquareCard";
@@ -57,6 +54,6 @@ export default connect(mapStateToProps)(HomeScreen);
 const styles = StyleSheet.create({
 	img: {
 		resizeMode: "contain",
-		width: wp("100"),
+		width: perfectSize("100"),
 	},
 });

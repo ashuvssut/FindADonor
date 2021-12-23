@@ -1,21 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import {
-	heightPercentageToDP as hp,
-	widthPercentageToDP as wp,
-} from "react-native-responsive-screen";
+import perfectSize from "../utils/pixelPerfect";
+
 import { Text, View } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import StatusBarGap from "./StatusBarGap";
 
 const Root = styled.View`
-	height: ${hp(12)}px;
+	height: ${perfectSize(12)}px;
 	background-color: #f88386;
 	align-items: center;
 	justify-content: space-evenly;
 	elevation: 5;
 	flex-direction: column;
-	/* border-radius:${hp("3.25%")}px; */
+	/* border-radius:${perfectSize("3.25%")}px; */
 `;
 
 const BackButton = styled.TouchableOpacity`
@@ -50,7 +48,7 @@ const AppBar = ({ title, goBack }) => {
 					style={{ height: "100%" }}
 					onPress={() => goBack()}
 				>
-					<AntDesign name="arrowleft" size={hp("3")} color="#fff" />
+					<AntDesign name="arrowleft" size={perfectSize("3")} color="#fff" />
 				</BackButton>
 				<Title>{title}</Title>
 			</Appbar>

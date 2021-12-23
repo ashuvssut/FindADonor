@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import {
-	heightPercentageToDP as hp,
-	widthPercentageToDP as wp,
-} from "react-native-responsive-screen";
+import perfectSize from "../../utils/pixelPerfect";
+
 
 export const Flex = styled.View`
 	align-items: center;
@@ -29,28 +27,28 @@ export const Profile = styled.View`
 `;
 
 export const Avatar = styled.View`
-	width: ${wp("15")}px;
-	height: ${wp("15")}px;
-	margin: ${wp("2")}px;
+	width: ${perfectSize("15")}px;
+	height: ${perfectSize("15")}px;
+	margin: ${perfectSize("2")}px;
 	border-radius: 200px;
 	background-color: #0f0;
 `;
 
 export const Title = styled.Text`
 	color: #707070;
-	font-size: ${hp("2.4")}px;
-	margin-bottom: ${hp("0.2")}px;
+	font-size: ${perfectSize("2.4")}px;
+	margin-bottom: ${perfectSize("0.2")}px;
 	font-weight: 600
 	margin-left: 10px;
 `;
 export const Description = styled.Text`
 	color: #909090;
-	font-size: ${hp("1.3")}px;
+	font-size: ${perfectSize("1.3")}px;
 	margin-left: 10px;
 `;
 
 export const ActionButton = styled.TouchableOpacity`
-	height: ${hp("3.5")}px;
+	height: ${perfectSize("3.5")}px;
 	background-color: #f88386;
 	align-items: center;
 	justify-content: center;
@@ -74,7 +72,7 @@ export const Italic = styled.Text`
 export const Name = styled.Text`
 	position: absolute;
 	color: #fff;
-	font-size: ${hp("4")}px;
-	top: ${hp("25")}px;
+	font-size: ${perfectSize("4")}px;
+	top: ${perfectSize("25")}px;
 	align-self: center;
 `;

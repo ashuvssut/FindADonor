@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {
-	heightPercentageToDP as hp,
-	widthPercentageToDP as wp,
-} from "react-native-responsive-screen";
+import perfectSize from "../utils/pixelPerfect";
+
 import { StyleSheet, Text, View } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import Icon from "./Icon";
@@ -22,7 +20,7 @@ const FilterBar = ({
 				<Icon
 					iconPack={iconPack}
 					name={iconName}
-					size={hp("2")}
+					size={perfectSize("2")}
 					color="#F88386"
 				/>
 			</IconBox>

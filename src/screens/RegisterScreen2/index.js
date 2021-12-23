@@ -8,10 +8,7 @@ import {
 	Pressable,
 	ActivityIndicator,
 } from "react-native";
-import {
-	widthPercentageToDP as wp,
-	heightPercentageToDP as hp,
-} from "react-native-responsive-screen";
+
 import {
 	SignupButton,
 	LoginText,
@@ -184,7 +181,7 @@ export default connect(mapStateToProps, {
 const styles = StyleSheet.create({
 	heading: {
 		color: "white",
-		fontSize: hp("6%"),
+		fontSize: perfectSize("6%"),
 		position: "absolute",
 		top: perfectSize(150),
 		textAlign: "center",
@@ -193,9 +190,9 @@ const styles = StyleSheet.create({
 	viewHeading: {
 		position: "absolute",
 		backgroundColor: "blue",
-		top: hp("10%"),
+		top: perfectSize("10%"),
 		// flex:1,
-		marginHorizontal: wp("10%"),
+		marginHorizontal: perfectSize("10%"),
 	},
 	img: {
 		top: 0,
@@ -204,15 +201,15 @@ const styles = StyleSheet.create({
 	},
 	dropdown: {
 		backgroundColor: "transparent",
-		height: hp("5.5%"),
-		width: wp("80%"),
+		height: perfectSize("5.5%"),
+		width: perfectSize("80%"),
 	},
 	dropDownStyle: {
 		backgroundColor: "#fafafa",
 	},
 	containerStyle: {
-		height: hp("5.5%"),
-		width: wp("80%"),
-		marginBottom: hp("2%"),
+		height: perfectSize("5.5%"),
+		width: perfectSize("80%"),
+		marginBottom: perfectSize("2%"),
 	},
 });

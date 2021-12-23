@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {
-	heightPercentageToDP as hp,
-	widthPercentageToDP as wp,
-} from "react-native-responsive-screen";
+import perfectSize from "../utils/pixelPerfect";
+
 
 const ErrorView = styled.View`
 	align-items: flex-start;

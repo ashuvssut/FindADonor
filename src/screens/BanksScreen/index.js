@@ -3,10 +3,8 @@ import { useFocusEffect } from "@react-navigation/native";
 
 import { StyleSheet, Text, View } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
-import {
-	widthPercentageToDP as wp,
-	heightPercentageToDP as hp,
-} from "react-native-responsive-screen";
+import perfectSize from "../../utils/pixelPerfect";
+
 import FilterBar from "../../components/FilterBar";
 import { Screen } from "../../components/Screen";
 import {
@@ -50,11 +48,11 @@ function BanksScreen({ findAllBanks, banks }) {
 					<View>
 						<Title numberOfLines={1}>{bank.name + ` Hospital`}</Title>
 						<Description>
-							<AntDesign name="phone" size={hp("1")} color="#000" />
+							<AntDesign name="phone" size={perfectSize("1")} color="#000" />
 							{" " + bank.phoneNumber}
 						</Description>
 						<Description>
-							<AntDesign name="mail" size={hp("1")} color="#000" />
+							<AntDesign name="mail" size={perfectSize("1")} color="#000" />
 							{" " + bank.email}
 						</Description>
 					</View>
@@ -110,7 +108,7 @@ function BanksScreen({ findAllBanks, banks }) {
 			>
 				<AntDesign
 					name="filter"
-					size={hp("3")}
+					size={perfectSize("3")}
 					color="#F88386"
 					style={{ marginTop: 2 }}
 				/>

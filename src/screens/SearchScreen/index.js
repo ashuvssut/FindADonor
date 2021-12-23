@@ -9,10 +9,8 @@ import {
 	ActivityIndicator,
 } from "react-native";
 import MapView, { Marker, Callout } from "react-native-maps";
-import {
-	heightPercentageToDP as hp,
-	widthPercentageToDP as wp,
-} from "react-native-responsive-screen";
+import perfectSize from "../../utils/pixelPerfect";
+
 import { Screen } from "../../components/Screen";
 import {
 	FilterText,
@@ -40,8 +38,8 @@ import { findAllDonors } from "../../redux/actions/donorsAction";
 import { useFocusEffect } from "@react-navigation/native";
 
 const SearchScreen = ({ navigation, location, findAllDonors, donors }) => {
-	const startWidth = -wp("100");
-	const endWidth = wp("0");
+	const startWidth = -perfectSize("100");
+	const endWidth = perfectSize("0");
 	const translateX = useSharedValue(startWidth);
 
 	useFocusEffect(
@@ -122,7 +120,7 @@ const SearchScreen = ({ navigation, location, findAllDonors, donors }) => {
 													{donor.age + " years old"}
 												</Description>
 												<Description>
-													<AntDesign name="phone" size={hp("1")} color="#fff" />
+													<AntDesign name="phone" size={perfectSize("1")} color="#fff" />
 													{" " + donor.phoneNumber}
 												</Description>
 											</View>
@@ -143,7 +141,7 @@ const SearchScreen = ({ navigation, location, findAllDonors, donors }) => {
 						))}
 					</MapView>
 					<FilterView onPress={() => openDrawer()}>
-						<AntDesign name="filter" size={hp("3")} color="#fff" />
+						<AntDesign name="filter" size={perfectSize("3")} color="#fff" />
 						<FilterText>FILTER</FilterText>
 					</FilterView>
 					<Animated.View style={[styles.sideMenu, viewStyle]}>
@@ -185,17 +183,17 @@ const styles = StyleSheet.create({
 	sideMenu: {
 		position: "absolute",
 		flexDirection: "row",
-		width: wp("100"),
-		height: hp("110"),
+		width: perfectSize("100"),
+		height: perfectSize("110"),
 	},
 	menu: {
 		backgroundColor: "#f88386",
-		width: wp("70"),
-		height: hp("110"),
+		width: perfectSize("70"),
+		height: perfectSize("110"),
 	},
 	backdrop: {
-		width: wp("30"),
-		height: hp("110"),
+		width: perfectSize("30"),
+		height: perfectSize("110"),
 	},
 	avatar: {
 		position: "relative",

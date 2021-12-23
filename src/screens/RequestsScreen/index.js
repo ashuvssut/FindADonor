@@ -8,10 +8,8 @@ import {
 	Pressable,
 	Keyboard,
 } from "react-native";
-import {
-	widthPercentageToDP as wp,
-	heightPercentageToDP as hp,
-} from "react-native-responsive-screen";
+import perfectSize from "../../utils/pixelPerfect";
+
 import { Screen } from "../../components/Screen";
 
 export default function RequestsScreen({ navigation }) {

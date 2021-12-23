@@ -8,10 +8,7 @@ import {
 	Dimensions,
 	TouchableOpacity,
 } from "react-native";
-import {
-	heightPercentageToDP as hp,
-	widthPercentageToDP as wp,
-} from "react-native-responsive-screen";
+
 import { Screen } from "../../components/Screen";
 import { connect } from "react-redux";
 import {
@@ -187,7 +184,7 @@ export default connect(mapStateToProps, {
 const styles = StyleSheet.create({
 	circleImg: {
 		resizeMode: "contain",
-		width: wp("100"),
+		width: perfectSize("100"),
 	},
 	circle: {
 		backgroundColor: "black",

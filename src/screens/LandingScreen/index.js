@@ -1,10 +1,7 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../context/Auth";
 import { StyleSheet, Text, View, Image, Button, Alert } from "react-native";
-import {
-	widthPercentageToDP as wp,
-	heightPercentageToDP as hp,
-} from "react-native-responsive-screen";
+
 import { Screen } from "../../components/Screen";
 import {
 	BottomView,
@@ -48,18 +45,18 @@ export default LandingScreen;
 const styles = StyleSheet.create({
 	heading: {
 		color: "white",
-		fontSize: hp("6%"),
+		fontSize: perfectSize("6%"),
 	},
 	heading1: {
 		color: "#343640",
-		fontSize: hp("6%"),
+		fontSize: perfectSize("6%"),
 	},
 	viewHeading: {
 		position: "absolute",
 		backgroundColor: "blue",
-		top: hp("10%"),
+		top: perfectSize("10%"),
 		// flex:1,
-		marginHorizontal: wp("10%"),
+		marginHorizontal: perfectSize("10%"),
 	},
 	img: {
 		top: 0,

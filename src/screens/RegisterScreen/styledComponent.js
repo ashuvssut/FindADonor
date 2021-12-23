@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import {
-	widthPercentageToDP as wp,
-	heightPercentageToDP as hp,
-} from "react-native-responsive-screen";
+import perfectSize from "../../utils/pixelPerfect";
+
 
 export const BottomView = styled.View`
 	flex: 1;
@@ -11,13 +9,13 @@ export const BottomView = styled.View`
 `;
 
 export const CheckBoxView = styled.View`
-	width: ${wp("80%")}px;
-	height: ${hp("5%")}px;
+	width: ${perfectSize("80%")}px;
+	height: ${perfectSize("5%")}px;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 `;
 
 export const RoleText = styled.Text`
-	font-size: ${hp("2%")}px;
+	font-size: ${perfectSize("2%")}px;
 `;

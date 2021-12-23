@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {
-	heightPercentageToDP as hp,
-	widthPercentageToDP as wp,
-} from "react-native-responsive-screen";
+import perfectSize from "../utils/pixelPerfect";
+
 
 const SquaredView = styled.TouchableOpacity`
 	width: 40%;
@@ -12,7 +10,7 @@ const SquaredView = styled.TouchableOpacity`
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	border-radius: ${hp("1")}px;
+	border-radius: ${perfectSize("1")}px;
 	border-width: 2px;
 	border-color: #f88386;
 `;
