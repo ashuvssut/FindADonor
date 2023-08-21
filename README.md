@@ -21,7 +21,9 @@ Register/Login
 <img src="./assets/docs/register.jpeg" width="200"/>
 
 #### Home Screen
+
 List nearby donors / blood banks
+
 <table>
   <tr>
     <td><img src="./assets/docs/home.jpeg" width="200"/></td>
@@ -31,5 +33,6 @@ List nearby donors / blood banks
 
 #### Maps Search
 
-Find nearby donors / blood banks on Azure Maps 
+Find nearby donors / blood banks on Azure Maps
+
 <img src="./assets/docs/search.jpeg" width="200"/>
