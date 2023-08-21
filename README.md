@@ -1,4 +1,4 @@
-# Find a Donor | Blooad Donor app
+# Find a Donor | Blood Donor app
 
 An App that helps you find blood donors or blood banks nearby with a simple UI. You can also register as a donor/blood bank
 - It uses Azure Maps to find nearby donors/blood banks data. 
@@ -29,7 +29,9 @@ It's a hackathon project. This app's UI is not that good. But it's functional. I
 ### Screenshots
 
 #### Sign in screen
+
 Register/Login
+
 <img src="./assets/docs/register.jpeg" width="200"/>
 
 #### Home Screen
