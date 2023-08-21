@@ -5,6 +5,18 @@ An App that helps you find blood donors or blood banks nearby with a simple UI. 
 - We are rendering all those map data using react-native-maps (uses google maps). 
 - For database solution we have used Azure Cosmos DB.
 
+## Backgroud
+
+This project took part in Microsoft Imagine Cup 2022. 
+
+<img src="./assets/docs/imaginecup.png" width="200"/>
+
+This project is developed by a group of 2 student developers:
+- [Ashutosh Khanduala](https://github.com/ashuvssut)
+- [Md Arshad Khan](https://github.com/adre9)
+
+The upstream repo is no longer maintained. This is a fork of the original repo. I'll be maintaining this repo from now on. Any PRs are welcome.
+
 ### Downlaod the app from here:
 <!-- https://bit.ly/BloodDonorAppDL -->
 <a href="https://bit.ly/BloodDonorAppDL"><img src="./assets/docs/download.png" width="200"/></a>
