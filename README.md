@@ -17,7 +17,9 @@ It's a hackathon project. This app's UI is not that good. But it's functional. I
 ### Screenshots
 
 #### Sign in screen
+
 Register/Login
+
 <img src="./assets/docs/register.jpeg" width="200"/>
 
 #### Home Screen
